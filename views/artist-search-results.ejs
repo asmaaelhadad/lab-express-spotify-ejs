@@ -1,2 +1,11 @@
-<h1> hello </h1>
-  
+<% dataBody.forEach(item => { %>
+    <div class="single-artist">
+      <% if (item.images.length > 0 ) { %> 
+        <div
+        style="
+          background-image: url('<%- item.images[0].url%> ');
+          background-size: cover;
+          height: 400px;
+          width: 350px;
+        ">
+        </div>
