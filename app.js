@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
     
      const artistdata = data.body.artists.items 
      res.render('artist-search-results',{ artistdata})
-      // ----> 'HERE WHAT WE WANT TO DO AFTER RECEIVING THE DATA FROM THE API'
+   
     })
     .catch(err => console.log('The error while searching artists occurred: ', err))
 } )
